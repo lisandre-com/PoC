@@ -9,7 +9,11 @@ import pefile
 import sys
 
 pe = pefile.PE(sys.argv[1])
-print("EXPORTS")
-for exp in pe.DIRECTORY_ENTRY_EXPORT.symbols:
-    if exp.name:
-        print(exp.name.decode())
+
+if hasattr(pe, 'DIRECTORY_ENTRY_EXPORT'):
+    print("EXPORTS")
+    for exp in pe.DIRECTORY_ENTRY_EXPORT.symbols:
+        if exp.name:
+            print(exp.name.decode())
+else:
+    print("No exports found.")

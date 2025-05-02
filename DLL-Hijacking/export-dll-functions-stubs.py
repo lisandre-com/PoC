@@ -5,7 +5,10 @@
 #               cat reverse.c version-stubs.txt > version.c
 # Prereq      : pip install pefile
 # Author      : Lisandre.com
-# Date        : 2025-05-02  
+# Date        : 2025-05-02
+# NOTE        : Adjust the function signatures using the documentation
+#               https://learn.microsoft.com/en-us/windows/win32/api/
+#               (search for the function name and look at the appropriate header file, e.g. winver.h)
 import pefile
 import sys
 

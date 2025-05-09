@@ -1,0 +1,7 @@
+__declspec(dllexport) void CscNetApiGetInterface() {}
+__declspec(dllexport) void CscSearchApiGetInterface() {}
+__declspec(dllexport) void OfflineFilesEnable() {}
+__declspec(dllexport) void OfflineFilesGetShareCachingMode() {}
+__declspec(dllexport) void OfflineFilesQueryStatus() {}
+__declspec(dllexport) void OfflineFilesQueryStatusEx() {}
+__declspec(dllexport) void OfflineFilesStart() {}

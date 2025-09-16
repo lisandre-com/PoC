@@ -2,8 +2,11 @@
 Name        : create-file.c
 Description : DLL Hijacking PoC that creates a file.
 Compile 64  : x86_64-w64-mingw32-gcc -shared -o create-file.dll create-file.c
+Compile 32  : i686-w64-mingw32-gcc -shared -o create-file.dll create-file.c
 Author      : Lisandre.com
 Date        : 2025-05-02
+Prereq      : Run sigcheck from Sysinternals to know if the app is 32-bit or 64-bit
+              sigcheck.exe VulnerableApp.exe
 */
 #include <windows.h>
 #include <stdio.h>

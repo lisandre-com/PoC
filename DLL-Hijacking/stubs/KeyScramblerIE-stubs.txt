@@ -1,0 +1,14 @@
+// Compile 32-bit
+//__declspec(dllexport) void DllCanUnloadNow() {}
+//__declspec(dllexport) void DllGetClassObject() {}
+__declspec(dllexport) void DllRegisterServer() {}
+__declspec(dllexport) void DllUnregisterServer() {}
+__declspec(dllexport) void KSFFInit() {}
+__declspec(dllexport) void KSFFUninit() {}
+__declspec(dllexport) void KSInit() {}
+__declspec(dllexport) void KSOptions() {}
+__declspec(dllexport) void KSPromptForKey() {}
+__declspec(dllexport) void KSSetKeyInfo() {}
+__declspec(dllexport) void KSSetOption() {}
+__declspec(dllexport) void KSUninit() {}
+__declspec(dllexport) void KSUpdate() {}
